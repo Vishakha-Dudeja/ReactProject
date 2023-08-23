@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
-import MySideNav from './Components/MySideNav/MySideNav';
+import NavBar from './Components/NavBar/NavBar';
 import DataTable from './Components/DataTable/DataTable';
 import Login from './Components/Login/Login';
 import Admin from './Components/Admin/Admin';
@@ -44,7 +44,7 @@ function WithNav() {
   return (
     <>
       <Header />
-      <MySideNav />
+      <NavBar />
       <Outlet />
     </>
   );

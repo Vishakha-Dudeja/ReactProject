@@ -1,11 +1,11 @@
-import './MySideNav.css';
+import './NavBar.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ClickOutside from 'react-click-outside';
 import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
-function MySideNav() {
+function NavBar() {
     const navigate = useNavigate();
     const [expanded, setExpanded] = useState(false);
     return (
@@ -70,4 +70,4 @@ function MySideNav() {
     )
 }
 
-export default MySideNav;
+export default NavBar;
