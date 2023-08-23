@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
     const navigate = useNavigate();
     const onSubmit = (data) => {
-    console.log(data);
-    if(data.userName === 'v' && data.password === 'v') {
-        navigate('/home')
-    }
+        console.log(data);
+        if (data.userName === 'v' && data.password === 'v') {
+            navigate('/home')
+        }
     }
 
     return (
-        <div style={{textAlign: 'center'}}>
+        <div style={{ textAlign: 'center' }}>
             <Form
                 onSubmit={onSubmit}
                 // validate={validate}
@@ -34,7 +34,7 @@ function Login() {
             Validation
             style
                 */}
-                {/*Reference- 
+            {/*Reference- 
                 https://final-form.org/docs/react-final-form/getting-started
                 https://contactmentor.com/login-form-react-js-code/
                 https://primereact.org/inputtext/#form

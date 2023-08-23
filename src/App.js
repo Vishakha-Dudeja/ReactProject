@@ -9,7 +9,7 @@ import Login from './Components/Login/Login';
 function App() {
   return (
     <Router>
-    <Routes>
+      <Routes>
         <Route element={<WithoutNav />}>
           <Route path="/login" element={<Login />} />
         </Route>
@@ -18,14 +18,16 @@ function App() {
           <Route path="/datatable" element={<DataTable />} />
         </Route>
       </Routes>
-      </Router>
+    </Router>
+//     Reference - 
+// https://stackoverflow.com/questions/47281850/how-to-hide-navbar-in-login-page-in-react-router
   );
 }
 
 function WithoutNav() {
   return (
     <>
-      <Outlet/>
+      <Outlet />
     </>
   );
 }
@@ -34,7 +36,7 @@ function WithNav() {
   return (
     <>
       <Header />
-      <MySideNav/>
+      <MySideNav />
       <Outlet />
     </>
   );
