@@ -38,6 +38,14 @@ function MySideNav() {
                             DataTable
                         </NavText>
                     </NavItem>
+                    <NavItem eventKey="admin">
+                        <NavIcon>
+                            <i className="fa fa-fw fa-pen" style={{ fontSize: '1.75em' }} />
+                        </NavIcon>
+                        <NavText>
+                            Admin
+                        </NavText>
+                    </NavItem>
                     <NavItem eventKey="charts">
                         <NavIcon>
                             <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
