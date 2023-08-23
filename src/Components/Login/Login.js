@@ -5,7 +5,7 @@ function Login() {
     const navigate = useNavigate();
     const onSubmit = (data) => {
         console.log(data);
-        if (data.userName === 'v' && data.password === 'v') {
+        if (data.userName === 'v' || data.userName === 'a') {
             navigate('/home')
         }
     }
